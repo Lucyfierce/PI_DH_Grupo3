@@ -56,9 +56,13 @@ main {
   background-color: black;
 }
 
+.carousel img{
+  width: 100%;
+}
+
 footer {
   background-color:#c79b69;
-  min-height: 150px;
+  min-height: 300px;
   list-style: none;
   text-shadow: black -1px 0;
   height: 30px;
