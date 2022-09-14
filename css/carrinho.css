@@ -1,0 +1,254 @@
+body {
+    font-family: 'inter', Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'inter', Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    width: 79%;
+    height: 70px;
+    left: -3px;
+    /*border: 2px solid #9c2c86;*/
+}
+
+header .deCima {
+    width: 1000px;
+    height: 30px;
+    /*border: 1px solid green;*/
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    width: 900px;
+    height: 22px;
+    /*border: 2px solid black;*/
+}
+
+.cabesa {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    /*border: 1px solid red;*/
+}
+
+header article {
+    display: flex;
+    width: 450px;
+    height: 50px;
+    /*border: 1px solid #000;*/
+}
+
+#take {
+    width: 132px;
+    height: 40px;
+    color: #000;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    /*border: 1px solid green;*/
+}
+
+
+/*Corpo da pagina*/
+
+article {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 85vw;
+    height: 82vh;
+    /*border: 2px solid #e62b86;*/
+}
+
+.main {
+    width: 45vw;
+    height: 78vh;
+    margin-left: 10px;
+    /* border: 2px solid #a7a400;*/
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    width: 43vw;
+    height: 76vh;
+    margin-top: 5px;
+    margin-left: 10px;
+    /*border: 2px solid #00a9a4;*/
+}
+
+img {
+    width: 192px;
+    height: 150px;
+}
+
+article li {
+    margin: 10px 10px;
+}
+
+div {
+    width: 215px;
+    height: 350px;
+    /*border: 2px solid red;*/
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 10px;
+    /*border: 2px solid #8dcb41;*/
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    background: #2E245E;
+    color: #FFFFFF;
+    margin-top: 15px;
+    /*border: 2px solid #faf519;*/
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #828282;
+    margin-top: 10px;
+    /*border: 2px solid #ef9c00*/
+}
+
+.precos {
+    font-size: 12px;
+    font-weight: 600;
+    height: 16px;
+    width: 210px;
+    color: #2E245E;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    /*border: 2px solid #898989;*/
+}
+
+button {
+    margin-top: 8px;
+    height: 20px;
+    width: 147px;
+    color: #828282;
+    /*text-decoration: underline;
+    border: 2px solid #bdba00;*/
+}
+
+body>#car {
+    margin-top: 2px;
+    margin-left: 2px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 450px;
+    width: 500px;
+    height: 400px;
+    /*border: 2px solid #000;*/
+}
+
+.procura {
+    margin-right: 5px;
+    padding-left: 5px;
+    border: 1px solid rgb(38, 0, 128);
+}
+
+.compras {
+    /*border: 2px solid tomato;*/
+}
+
+.sobreCarrinho {
+    border: 2px solid #898989;
+}
+
+.xyz {
+    display: flex;
+    justify-content: flex-start;
+    width: 498px;
+    height: 50px;
+    /*border: 2px solid #ef9c00;*/
+}
+
+.digite {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 45px;
+    padding-left: 15px;
+    background: #F5F5F5;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 45px;
+    background: #6B54DE;
+    color: #ffff;
+}
+
+.compras {
+    display: flex;
+    align-items: center;
+    width: 495px;
+    height: 40px;
+    padding-left: 15px;
+    background: #6B54DE;
+    color: #ffff;
+}
+
+.sobreCarrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 490px;
+    font-size: 30px;
+    background: #F5F5F5;
+    color: #333333;
+}
+
+#listaDoCarrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 20px;
+    font-size: 15px;
+    color: #828282;
+    /*border: 1px solid black;*/
+}
+
+.conteudo2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    height: 350px;
+    /*border: 2px solid yellow;*/
+}
+
+footer {
+    display: flex;
+    justify-content: baseline;
+    width: 85.2%;
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 5px;
+    /*border: 2px solid #000;*/
+}
+
+
+/* Botões se houver*/
