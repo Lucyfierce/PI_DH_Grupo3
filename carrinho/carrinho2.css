@@ -1,0 +1,30 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: solid 1px yellowgreen;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: solid 1px red;
+}
+.selected{
+    text-decoration: none;
+}
+
+.a-lista-ul{
+    display: flex;
+    flex-direction: row;
+}
+.compar-novamente{
+    margin-left: 10px;
+}
+/*@media*/
