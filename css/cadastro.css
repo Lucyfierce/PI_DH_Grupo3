@@ -9,7 +9,7 @@
     text-align: center;
     color: #e7dfd8;
     align-items: center;
-    /* padding-top: 50px; */
+    padding-top: 70px;
 }
 
 .formulario-login{
@@ -34,7 +34,6 @@
     flex-direction: column;
     margin: 10px;
     margin-top: 0;
-    /* padding-bottom: 10px; */
     
 }
 .botao-entrar{
@@ -43,11 +42,9 @@
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin: 10px;
-    margin-top: 10px;
+    margin: 20px;
     align-items: center;
-    
-    /* width: 100%; */
+    width: 90%;
     
 }
 #email, #senha{
@@ -73,13 +70,21 @@
 .newsletter-container{
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    margin: 10px;
+    flex-direction: row;
+    margin: 20px;
     margin-top: 0;
+}
+.checkbox{
+    margin-right: 10px;
 }
 #nome{
     text-align: left;
     margin-top: 10px;
-    padding: 10px;
-
+    
 }
+span .preencha-text{
+
+  
+}
+
+@media 
