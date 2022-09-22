@@ -42,29 +42,42 @@ header {
   
 }
 
-.icones-cabecalho{
+.icones-cabecalho  {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   align-items: flex-end;
   padding: 10px;
+  /*criada width para poder colocar exemplo de barra de pesquisa*/
+  width: 100px; 
+  /* justify-content: space-between; */
 
+}
+
+#pesq{
+  width: 100px;
+  
 }
 
 /*Bara de pesquisa*/
-.serach{
-  display: flex;
-  
+.search{
+ width: 150px;
 }
-.serach-button{
- display: flex;
- align-items: flex-end;
 
+
+#show-or-hide{
+  /* display: flex;
+  height: 10px;
+  width: 15px;
+  padding: 10px;
+  margin-bottom: 25px;
+  align-items:flex-start ;
+  display: flex;
+   */
 }
-form .serach-button:hover {
-  background-color: white;
-  color:#c79b69
-}
+
+
+
 
 .bi{
   color: black;
