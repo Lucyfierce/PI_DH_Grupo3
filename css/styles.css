@@ -151,7 +151,7 @@ margin-left: 10px;
 }
 .tittle-sobrenos{
   padding: 20px;
-  color:#c79b69
+  color:#c79b69;
 
 }
 .descricao{
@@ -166,4 +166,8 @@ margin-left: 10px;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+:hover > .img-sobrenos {
+  transform: translate(-15px, -15px);
+  transition: .5s cubic-bezier(.5,.03,.41,1);
 }
