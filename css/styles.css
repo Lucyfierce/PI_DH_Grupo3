@@ -140,7 +140,12 @@ margin-left: 10px;
 .bi{
   color: black;
 }
-
-
-
-
+.produtos .baixos{
+  align-items: center;
+  justify-content: center;
+}
+.produtos .violoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
