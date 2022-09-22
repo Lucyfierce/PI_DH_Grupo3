@@ -51,6 +51,21 @@ header {
 
 }
 
+/*Bara de pesquisa*/
+.serach{
+  display: flex;
+  
+}
+.serach-button{
+ display: flex;
+ align-items: flex-end;
+
+}
+form .serach-button:hover {
+  background-color: white;
+  color:#c79b69
+}
+
 .bi{
   color: black;
 }
