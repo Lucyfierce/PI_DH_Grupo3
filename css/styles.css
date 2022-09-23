@@ -55,13 +55,19 @@ header {
 }
 
 #pesq{
-  width: 100px;
-  
+  width: 500px;
+  height: 50px;
+
 }
 
 /*Bara de pesquisa*/
 .search{
- width: 150px;
+ position: absolute;
+ right: 500px;
+ z-index: 1;
+ display: none;
+
+ 
 }
 
 
