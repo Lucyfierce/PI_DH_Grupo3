@@ -42,13 +42,34 @@ header {
   
 }
 
-.icones-cabecalho{
+.icones-cabecalho  {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   align-items: flex-end;
   padding: 10px;
+  /*criada width para poder colocar exemplo de barra de pesquisa*/
+  width: 100px; 
+  /* justify-content: space-between; */
 
+}
+
+#pesq{
+  width: 700px;
+  height: 50px;
+  
+}
+
+/*Bara de pesquisa*/
+.search{
+  position:absolute;
+  background: white ;
+  top: 200px;
+  color:black;
+  z-index: 1;
+  left: 450px;
+  display: none;
+ /* display: none; */
 }
 
 .bi{
