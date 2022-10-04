@@ -7,5 +7,9 @@ btn.addEventListener('click', () =>{
     } else {
         search.style.display = 'block'
     }
+<<<<<<< HEAD:scripts/pesquisa.js
+})
+=======
 })
 
+>>>>>>> thomas:public/js/pesquisa.js
