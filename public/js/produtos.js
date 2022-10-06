@@ -3,129 +3,201 @@
 const produtos = [
       {
         category: 1,
-        id: 1,
-        name: "Sire v1",
-        price: 1200,
+        name: "Sire V3",
         description: "lorem ipsum dolor sit amet",
         colors: [
           {
-            name: "red",
+            id: 1,
+            name: "amarelo",
+            price: 1200,
             img: "/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png",
-            main: true
+            main: true,
+          },
+          {
+            id: 2,
+            name: "branco",
+            price: 3400,
+            img: "/img/Baixos/Sire Marcus Miller V3 2nd-branco.png",
+            main: true,
+          },
+          {
+            id: 3,
+            name: "sunburst",
+            price: 2800,
+            img: "/img/Baixos/Sire Marcus Miller V3 2nd-sunburst.png",
+            main: true,
+          }
+        ]
+        },
+      {
+        category: 1,
+        name: "Sire V5",
+        description: "lorem ipsum dolor sit amet",
+        colors: [
+          {
+            id: 4,
+            name: "creme",
+            price: 1200,
+            img: "/img/Baixos/Sire Marcus Miller V5-creme.png",
+            main: true,
+          },
+          {
+            id: 5,
+            name: "natural",
+            price: 3400,
+            img: "/img/Baixos/Sire Marcus Miller V5-Natural.png",
+            main: true,
+          },
+          {
+            id: 6,
+            name: "tobacco",
+            price: 2800,
+            img: "/img/Baixos/Sire Marcus Miller V5-tobacco.png",
+            main: true,
+          
           }
         ]
       },
       {
         category: 1,
-        id: 2,
-        name: "Sire v2",
-        price: 3123,
+        name: "Sire V7",
         description: "lorem ipsum dolor sit amet",
         colors: [
           {
+            id: 7,
             name: "red",
-            img: "/img/baixos/sirev2.jpeg",
-            main: true
-          }
-        ]
-      },
-      {
-        category: 1,
-        id: 3,
-        name: "Sire v3",
-        price: 3422,
-        description: "lorem ipsum dolor sit amet",
-        colors: [
+            price: 1200,
+            img: "/img/Baixos/Sire Marcus Miller V7 2nd-red.png",
+            main: true,
+          },
           {
-            name: "red",
-            img: "/img/baixos/sirev3.jpeg",
-            main: true
-          }
-        ]
-      },
-      {
-        category: 2,
-        id: 1,
-        name: "Sire g1",
-        price: 2321,
-        description: "lorem ipsum dolor sit amet",
-        colors: [
+            id: 8,
+            name: "sunburst",
+            price: 3400,
+            img: "/img/Baixos/Sire Marcus Miller V7 2nd-sunburst.png",
+            main: true,
+          },
           {
-            name: "red",
-            img: "/img/guitarras/sireg1.jpeg",
-            main: true
+            id: 9,
+            name: "verde",
+            price: 2800,
+            img: "/img/Baixos/Sire Marcus Miller V7 2nd-verde.png",
+            main: true,
           }
         ]
       },
       {
         category: 2,
-        id: 2,
-        name: "Sire g2",
-        price: 4321,
+        name: "Larry Carlton H7",
         description: "lorem ipsum dolor sit amet",
         colors: [
           {
-            name: "red",
-            img: "/img/guitarras/sireg2.jpeg",
-            main: true
+            id: 10,
+            name: "branco",
+            price: 1200,
+            img: "/img/Guitarras/Sire Larry Carlton H7-branco.png",
+            main: true,
+          },
+          {
+            id: 11,
+            name: "preto",
+            price: 3400,
+            img: "/img/Guitarras/Sire Larry Carlton H7-preto.png",
+            main: true,
+          },
+          {
+            id: 12,
+            name: "vermelho",
+            price: 2800,
+            img: "/img/Guitarras/Sire Larry Carlton H7-vermelho.png",
+            main: true,
           }
         ]
       },
       {
         category: 2,
-        id: 3,
-        name: "Sire g3",
-        price: 2314,
+        name: "Larry Carlton L7",
         description: "lorem ipsum dolor sit amet",
         colors: [
           {
-            name: "red",
-            img: "/img/guitarras/sireg3.jpeg",
-            main: true
+            id: 13,
+            name: "amarela",
+            price: 1200,
+            img: "/img/Guitarras/Sire Larry Carlton L7-amarela.png",
+            main: true,
+          },
+          {
+            id: 14,
+            name: "azul",
+            price: 3400,
+            img: "/img/Guitarras/Sire Larry Carlton L7-azul.png",
+            main: true,
+          },
+          {
+            id: 15,
+            name: "branco",
+            price: 2800,
+            img: "/img/Guitarras/Sire Larry Carlton L7-branco.png",
+            main: true,
+          }
+        ]
+      },
+      {
+        category: 2,
+        name: "Larry Carlton S7",
+        description: "lorem ipsum dolor sit amet",
+        colors: [
+          {
+            id: 16,
+            name: "sunburst",
+            price: 1200,
+            img: "/img/Guitarras/Sire Larry Carlton S7 Vintage-sunburst.png",
+            main: true,
+          },
+          {
+            id: 17,
+            name: "amarelo",
+            price: 3400,
+            img: "/img/Guitarras/Sire Larry Carlton L7-azul.png",
+            main: true,
+          },
+          {
+            id: 18,
+            name: "branco",
+            price: 2800,
+            img: "/img/Guitarras/Sire Larry Carlton T7-branco.png",
+            main: true,
           }
         ]
       },
       {
         category: 3,
-        id: 1,
-        name: "Sire a1",
-        price: 4412,
+        name: "Larry Carlton A3",
         description: "lorem ipsum dolor sit amet",
         colors: [
           {
-            name: "red",
-            img: "/img/violoes/sireg1.jpeg",
-            main: true
-          }
-        ]
-      },
-      {
-        category: 3,
-        id: 2,
-        name: "Sire a2",
-        price: 3212,
-        description: "lorem ipsum dolor sit amet",
-        colors: [
+            id: 19,
+            name: "sunburst",
+            price: 1200,
+            img: "/img/Violões/Sire Larry Carlton A3-D-sunburst.png",
+            main: true,
+          },
           {
-            name: "red",
-            img: "/img/violoes/sireg2.jpeg",
-            main: true
-          }
-        ]
-      },
-      {
-        category: 3,
-        id: 3,
-        name: "Sire a3",
-        price: 3123,
-        description: "lorem ipsum dolor sit amet",
-        colors: [
+            id: 20,
+            name: "natural",
+            price: 3400,
+            img: "/img/Violões/Sire Larry Carlton A3-natural.png",
+            main: true,
+          },
           {
-            name: "red",
-            img: "/img/violoes/sireg3.jpeg",
-            main: true
+            id: 21,
+            name: "natural",
+            price: 2800,
+            img: "/img/Violões/Sire Larry Carlton A3G-natural.png",
+            main: true,
           }
         ]
       }
-    ]
+,]
 module.exports = produtos
+
