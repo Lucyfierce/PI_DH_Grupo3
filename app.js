@@ -3,7 +3,6 @@ const app = express()
 const path = require('path')
 
 
-
 const routerIndex = require('./routes/index')
 const routerSobrenos = require('./routes/sobrenos')
 const routerCarrinho = require('./routes/carrinho')
@@ -12,7 +11,6 @@ const routerAreadocliente = require('./routes/areadocliente')
 const routerBaixo = require('./routes/baixo')
 const routerGuitarra = require('./routes/guitarra')
 const routerViolao = require('./routes/violao')
-
 
 app.use('/', routerIndex)
 app.use('/sobrenos', routerSobrenos)

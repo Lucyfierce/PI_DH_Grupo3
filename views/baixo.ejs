@@ -59,12 +59,22 @@
   <main>
     <section class="produtos">
         <div id="products" class="baixos">
-            <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt="">
+
+          <% produtos.forEach(function(m) { %>
+            <p>teste</p>
+            <h4><%= m.name %></h4>
+            <!-- <p class="ps-text-grey">
+              <%= m.descricao %> <%= m.preco %>
+            </p> -->
+            <img src="<%= m.colors[0].img %>">
+            <%}) %>
+
+            <!-- <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt="">
             <img src="/img/Baixos/Sire Marcus Miller V5-creme.png" alt="">
             <img src="/img/Baixos/Sire Marcus Miller V7 2nd-red.png" alt="">
             <img src="/img/Baixos/Sire Marcus Miller V3 2nd-branco.png" alt=""> 
             <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt="">
-            <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt="">
+            <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt=""> -->
         </div>
     </section>
   </main>
