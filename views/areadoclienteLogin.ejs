@@ -57,12 +57,13 @@
     <section calss="login-content">
             <h2 id="login-title">Faça seu Login</h2>
             <div class="formulario-login">
-                <form class="formulario-login-content" action="#">
+                <form class="formulario-login-content" action="/areadoclientelogin/criar" method="POST">
+
                     <div class="datas-container">
                         <label class="datas-container" id="email" for="email">E-mail</label>
-                        <input class="datas-container" type="email" id="email" placeholder="E-mail" reuquired>
+                        <input class="datas-container" type="email" name="email" id="email" placeholder="E-mail" required>
                         <label class="datas-container" id="senha" for="password">Senha</label>
-                        <input class="datas-container" type="password" id="password" required>
+                        <input class="datas-container" type="password" id="password" placeholder="Senha" required>
                         <input class="botao-entrar" id="botao-entrar" type="submit" name="Entrar" value="Entrar">
                     </div>
                         <span class="novo-cliente">Novo cliente?</span>
