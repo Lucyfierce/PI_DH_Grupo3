@@ -12,6 +12,7 @@ const routerBaixo = require('./routes/baixo')
 const routerGuitarra = require('./routes/guitarra')
 const routerViolao = require('./routes/violao')
 
+
 app.use('/', routerIndex)
 app.use('/sobrenos', routerSobrenos)
 app.use('/carrinho', routerCarrinho )
@@ -21,6 +22,9 @@ app.use('/areadoclientelogin/criar', routerAreadocliente)
 app.use('/baixo', routerBaixo)
 app.use('/guitarra', routerGuitarra)
 app.use('/violao', routerViolao)
+
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')

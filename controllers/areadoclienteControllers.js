@@ -1,6 +1,10 @@
 const path = require('path')
 
 const areadoclienteControllers = {
+    index: (req, res) => {
+        res.render('areadoclientelogin')
+    },
+    
     viewForm: (req, res) =>{
         return res.render('areadoclienteLogin')
     },
@@ -14,10 +18,7 @@ const areadoclienteControllers = {
         res.redirect('/')
     },
 
-    index: (req, res) => {
-        res.render('areadoclientelogin')
-    },
-
+    
 
 }
 module.exports = areadoclienteControllers
