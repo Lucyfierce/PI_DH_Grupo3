@@ -58,19 +58,19 @@
     <section calss="login-content">
             <h2 id="login-title">Cadastro</h2>
             <div class="formulario-login">
-                <form class="formulario-login-content" action="#">
+                <form class="formulario-login-content" action="/cadastro/criar" method="POST">
                     <span class="preencha-text">Preencha os campos abaixo para criar sua conta.</span>
                     <br>
 
                     <div class="datas-container">
                         <label class="datas-container" id="nome" for="nome">Nome Completo*</label>
-                        <input class="datas-container" type="nome" id="nome" placeholder="Nome Completo" required>
+                        <input class="datas-container" type="nome" id="nome" name="nomeCadastro" placeholder="Nome Completo" required>
                         <label class="datas-container" id="email" for="email">E-mail*</label>
-                        <input class="datas-container" type="email" id="email" placeholder="E-mail" required>
+                        <input class="datas-container" type="email" name="emailCadastro" id="email" placeholder="E-mail" required>
                         <label class="datas-container" id="senha" for="password">Criar Senha*</label>
-                        <input class="datas-container" type="password" id="password" required>
+                        <input class="datas-container" type="password" name="passwordCadastro" id="password" required>
                         <label class="datas-container" id="senha" for="password">Confirme a Senha*</label>
-                        <input class="datas-container" type="password" id="password" required>
+                        <input class="datas-container" type="password" name="passwordCadastro" id="password" required>
                     </div>
 
                     <div class="newsletter-container">
