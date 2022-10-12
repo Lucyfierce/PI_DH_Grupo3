@@ -11,7 +11,7 @@ const areadoclienteControllers = {
     
     salvarForm: (req, res) =>{
         
-        console.log(req.body)
+        console.log('login', req.body)
         res.redirect('/')    
     },
     

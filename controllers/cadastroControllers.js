@@ -10,8 +10,8 @@ const cadastroControllers = {
     },
     
     salvarForm: (req, res) =>{
-        console.log(req.body)
-        res.redirect('/confCadastro')    
+        console.log('cadastro', req.body)
+        res.redirect('/')    
     },
 }
 module.exports = cadastroControllers

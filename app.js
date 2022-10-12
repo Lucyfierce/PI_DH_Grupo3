@@ -3,15 +3,16 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-
 const routerIndex = require('./routes/index')
 const routerSobrenos = require('./routes/sobrenos')
 const routerCarrinho = require('./routes/carrinho')
 const routerCadastro = require('./routes/cadastro')
 const routerAreadocliente = require('./routes/areadocliente')
-const routerBaixo = require('./routes/baixo')
-const routerGuitarra = require('./routes/guitarra')
-const routerViolao = require('./routes/violao')
+const routerProdutos = require('./routes/produtos')
+
+
+app.use(express.urlencoded({extended: false}))
+app.use(express.json())
 
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public'))) 
@@ -23,9 +24,9 @@ app.use('/carrinho', routerCarrinho )
 app.use('/cadastro', routerCadastro)
 app.use('/areadoclientelogin', routerAreadocliente)
 //app.use('/areadoclientelogin/criar', routerAreadocliente)
-app.use('/baixo', routerBaixo)
-app.use('/guitarra', routerGuitarra)
-app.use('/violao', routerViolao)
+app.use('/produtos', routerProdutos)
+
+
 
 // // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

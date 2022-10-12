@@ -1,21 +1,21 @@
 const path = require('path')
 const produtos = require('../public/js/produtos')
 
-const baixoControllers = {
+const produtosControllers = {
     index: (req, res) => {
         let categoria = req.query.categoria
         console.log(categoria)
         console.log(produtos)
 
         if (!categoria)
-        res.render('baixo', {produtos: produtos})
+        res.render('produtos', {produtos: produtos})
         
         else{
             let resultado = produtos.filter(p => p.category == categoria) 
-        res.render('baixo',{produtos : resultado})
+        res.render('produtos',{produtos : resultado})
 
         }
 
     }
 }
-module.exports = baixoControllers
+module.exports = produtosControllers
