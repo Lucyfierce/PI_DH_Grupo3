@@ -1,6 +1,7 @@
 // var createError = require('http-errors');
 const express = require('express')
 const app = express()
+const fs = require('fs');
 const path = require('path')
 
 const routerIndex = require('./routes/index')
@@ -9,6 +10,7 @@ const routerCarrinho = require('./routes/carrinho')
 const routerCadastro = require('./routes/cadastro')
 const routerAreadocliente = require('./routes/areadocliente')
 const routerProdutos = require('./routes/produtos')
+const routerPesquisa = require('./routes/pesquisa')
 
 
 app.use(express.urlencoded({extended: false}))
@@ -25,6 +27,7 @@ app.use('/cadastro', routerCadastro)
 app.use('/areadoclientelogin', routerAreadocliente)
 //app.use('/areadoclientelogin/criar', routerAreadocliente)
 app.use('/produtos', routerProdutos)
+app.use('/pesquisa', routerPesquisa);
 
 
 

@@ -1,5 +1,6 @@
+//Arquivo produtos.js pode ser deletado pois foi sobrescrevido polo arquivo products.json
 
-const produtos = [
+/*const produtos = [
       {
         category: 1,
         name: "Sire V3",
@@ -200,3 +201,4 @@ const produtos = [
 ,]
 module.exports = produtos
 
+*/

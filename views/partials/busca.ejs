@@ -1,0 +1,21 @@
+<!-- Pesquisa-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/navbar') %>
+
+            <form action="/views/pesquisa" method="GET">
+
+                <h2 id="pesquisa">Pesquisa</h2>
+
+                <label for="name">buscar</label>
+                <input type="text" id="name" name="name" placeholder="Faça sua pesquisa">
+                <button type="submit">Pesquisar</button>
+            </form>
+            
+    </body>
+
+</html>

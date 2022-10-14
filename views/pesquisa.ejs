@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/navbar') %>
+            <main>
+                <form action="/pesquisa" method="POST">
+                    <!-- usar o neste caso method="POST" prq o GET ja esta sendo usado (vide:navbar.ejs(em /pesquisa))-->
+
+                    <h2 id="pesquisa">Pesquisa</h2>
+
+                    <label for="name">buscar</label>
+                    <input type="text" id="name" name="name" placeholder="Faça sua pesquisa">
+                    <button type="submit">Pesquisar</button>
+                </form>
+
+            </main>
+            <%- include('./partials/footet') %>
+
+    </body>
+
+</html>
