@@ -159,14 +159,11 @@
     
     .cart-container section button {
         color: #fff;
-        
-        border: none;
-        
+        border: none;  
         font-size: 1em;
-        
         padding: 5px 15px;
-        
         background-color: #c79b69;
+        border-radius: 16px;
     }
     
     .cart-container section .totals {
