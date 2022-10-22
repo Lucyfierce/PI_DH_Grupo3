@@ -1,90 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.login-content{
-    display: flex;
-    justify-content: center;
+.navbar-expand-lg,
+.navbar-collapse {
+  display: flex;
+  flex-direction: row;
 }
-#login-title{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+
+.login-content {
+  display: flex;
+  justify-content: center;
+}
+#login-title {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #e7dfd8;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.formulario-login {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #e7dfd8;
+  margin-top: 0px;
+}
+
+.formulario-login-content {
+  width: 30%;
+  margin-top: 0;
+}
+.datas-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 0;
+}
+.botao-entrar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px;
+  align-items: center;
+  width: 90%;
+}
+#email,
+#senha {
+  text-align: initial;
+}
+.novo-cliente .cadastre-se {
+  text-align: end;
+  text-decoration: none;
+  color: #e7dfd8;
+}
+.cadastre-se {
+  text-align: end;
+  text-decoration: none;
+  color: #e7dfd8;
+}
+.checkbox {
+  text-align: start;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 20px;
+  margin-top: 0;
+}
+.checkbox {
+  margin-right: 10px;
+}
+#nome {
+  text-align: left;
+  margin-top: 10px;
+}
+span .preencha-text {
+}
+
+/* Responsividade*/
+
+@media (min-width: 357px) and (max-width: 480px) {
+  /* Body*/
+  .formulario-login {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
     color: #e7dfd8;
-    align-items: center;
-    padding-top: 100px;
-}
-
-.formulario-login{
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color:#e7dfd8;
     margin-top: 0px;
-}
-
-.formulario-login-content{
-    width: 30%;
-    margin-top: 0;
-    
-}
-.datas-container{
+    margin-right: 25px;
+  }
+  .formulario-login-content {
+    width: 100%;
+  }
+  .login-content {
+    height: 90vh;
+  }
+  .inputAll {
+    width: 100vw;
+  }
+  .datas-container {
     display: flex;
     flex-direction: column;
     margin: 10px;
     margin-top: 0;
-    
-}
-.botao-entrar{
+    padding-bottom: 10px;
+    width: 100vw;
+  }
+  .btn {
+    width: 100vw;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .botao-entrar {
+    width: 20vw;
+  }
+  .span {
+    width: 100vw;
+    display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin: 20px;
-    align-items: center;
-    width: 90%;
-    
+  }
+  .cadastre-se {
+    position: relative;
+    margin-left: 25px;
+  }
 }
-#email, #senha{
-    text-align: initial;
-
-}
-.novo-cliente .cadastre-se{
-    text-align: end;
-    text-decoration: none;
-    color:#e7dfd8;
-
-}
-.cadastre-se{
-    text-align: end;
-    text-decoration: none;
-    color:#e7dfd8;
-
-}
-.checkbox{
-    text-align: start;
-}
-
-.newsletter-container{
+@media (min-width: 481px) and (max-width: 600px) {
+  /* Body */
+  .mainLogin {
+    width: 100vw;
+    height: 65vh;
+  }
+  .formulario-login {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
-    margin: 20px;
-    margin-top: 0;
+    color: #e7dfd8;
+  }
+  .inputAll {
+    width: 100%;
+    height: 65%;
+  }
+  .botao-entrar {
+    width: 60px;
+  }
+  .span {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+  }
+  .cadastre-se {
+    position: relative;
+    margin-left: 25px;
+    border: 1px solid pink;
+  }
 }
-.checkbox{
-    margin-right: 10px;
+@media (min-width: 601px) and (max-width: 799px) {
+  /* Body*/
+  .area-do-cliente {
+    width: 35px;
+  }
+  .carrinho {
+    width: 35px;
+  }
+  .busca {
+    width: 35px;
+  }
+  /*Body*/
+  .formulario-login-content {
+    width: 100%;
+  }
 }
-#nome{
-    text-align: left;
-    margin-top: 10px;
-    
+@media (min-width: 800px) and (max-width: 990px) {
+   /* Body*/
+   .area-do-cliente {
+    width: 35px;
+  }
+  .carrinho {
+    width: 35px;
+  }
+  .busca {
+    width: 35px;
+  }
+  /*Body*/
+  .formulario-login-content {
+    width: 100%;
+  }
 }
-span .preencha-text{
-
-  
+@media (min-width: 901px) and (max-width: 1024px) {
+   /* Body*/
+   .area-do-cliente {
+    width: 35px;
+  }
+  .carrinho {
+    width: 35px;
+  }
+  .busca {
+    width: 35px;
+  }
+  /*Body*/
+  .formulario-login-content {
+    width: 100%;
+  }
 }
-
-@media 
