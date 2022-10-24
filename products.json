@@ -132,16 +132,25 @@
           "id": 16,
           "cor": "brown",
           "img": "/img/Guitarras/Sire Larry Carlton S7 Vintage-sunburst.png"
-        },
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "categoria": 2,
+      "modelo": "Larry Carlton S7",
+      "descricao": "lorem ipsum dolor sit amet",
+      "preco": 4500,
+      "cores": [
         {
-          "id": 17,
-          "cor": "yellow",
-          "img": "/img/Guitarras/Sire Larry Carlton L7-azul.png"
-        },
-        {
-          "id": 18,
+          "id": 22,
           "cor": "branco",
           "img": "/img/Guitarras/Sire Larry Carlton T7-branco.png"
+        },
+        {
+          "id": 23,
+          "cor": "#ed8932",
+          "img": "/img/Guitarras/Sire Larry Carlton T7-amarelo.png"
         }
       ]
     },
@@ -154,18 +163,13 @@
       "cores": [
         {
           "id": 19,
-          "cor": "sunburst",
+          "cor": "#edb232",
           "img": "/img/Violões/Sire Larry Carlton A3-D-sunburst.png"
         },
         {
           "id": 20,
-          "cor": "natural",
+          "cor": "#ede4c2",
           "img": "/img/Violões/Sire Larry Carlton A3-natural.png"
-        },
-        {
-          "id": 21,
-          "cor": "natural",
-          "img": "/img/Violões/Sire Larry Carlton A3G-natural.png"
         }
       ]
     }

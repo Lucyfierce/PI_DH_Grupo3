@@ -10,30 +10,22 @@
           <% produtos.forEach(function(prod) { %>
           
             <div class="instrumentos">
-            
+              
+              <img id="imgInstr<%= prod.id %>" src="<%= prod.cores[0].img %>">
+              <div>
+              <% prod.cores.forEach(function(m) { %>
+              
+                <input type="button" id="btnColor" class="btnColors" style='background-color: <%= m.cor %>' onmouseover='modifyImg("<%= m.img%>","<%= prod.id%>")'>
+  
+                <% }) %> 
+              </div>
             <h2><%= prod.modelo %></h2>
             <h4><%= prod.descricao %> </h4>
             <h4><%= prod.preco %></h4> 
-            <img id="imgInstr<%= prod.name %>" src="<%= prod.cores[0].img %>">
-
-
             
-            <% prod.cores.forEach(function(m) { %>
-            
-              <!-- <input type="button" id="btnColor" class="btnColors" style='background-color: <%= m.cor %>' onmouseover='modifyImg("<%= m.img %>")'> -->
-              <input type="button" id="btnColor" class="btnColors" style='background-color: <%= m.cor %>' onmouseover='modifyImg("<%= prod.img%>","<%= prod.name%>")'>
-
-              <% }) %> 
               </div>
               <% }) %>
 
-
-            <!-- <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt="">
-            <img src="/img/Baixos/Sire Marcus Miller V5-creme.png" alt="">
-            <img src="/img/Baixos/Sire Marcus Miller V7 2nd-red.png" alt="">
-            <img src="/img/Baixos/Sire Marcus Miller V3 2nd-branco.png" alt=""> 
-            <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt="">
-            <img src="/img/Baixos/Sire Marcus Miller V3 2nd-amarelo.png" alt=""> -->
         </div>
     </section>
   </main>
