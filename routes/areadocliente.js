@@ -8,7 +8,10 @@ router.get('/', areadoclienteControllers.index)
 router.get('/criar', areadoclienteControllers.viewForm)
 router.post('/criar', areadoclienteControllers.salvarForm)
 
-//router.get('/criar', areadoclienteControllers.criar)
+// router.get('/criar', areadoclienteControllers.criar)
 
 
-module.exports = router
+module.exports = router;
+
+
+
