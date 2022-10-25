@@ -47,7 +47,7 @@ app.use('/produtos', routerProdutos)
 //     res.render('error');
 //   });
   
-//   module.exports = app;
+   module.exports = app;
   
 
 app.listen(3000, ()=> {console.log('Na porta 3000')})
