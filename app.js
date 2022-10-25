@@ -3,6 +3,8 @@ const express = require('express')
 const app = express()//??
 const fs = require('fs');
 const path = require('path')
+const session = require('express-session');
+
 
 const router = express.Router()
 const routerIndex = require('./routes/index')
@@ -15,6 +17,7 @@ const routerProdutos = require('./routes/produtos')
 
 
 app.use(express.urlencoded({extended: false}))
+app.use(session( {secret: 'Mensagem secreta'}));
 app.use(express.json())
 
 app.set('views', path.join(__dirname, 'views'))
