@@ -13,6 +13,21 @@ const areadoclienteControllers = {
     viewForm: (req, res) =>{
         return res.render('cadastro')
     },
+    login: (req, res) => {
+        let usuario = req.body.email
+        let senha = req.body.password
+        let usuarioEncontrado = usuarios.find(usr => usr.email == usuario)
+        if(usuarioEncontrado){
+            if (usuarioEncontrado.password === senha){
+                req.session.userLogged = usuario
+                res.redirect('/')
+            }else{
+                let errors = [] 
+                errors.push('Usuario nao encontrado')
+                res.render('login', {errors, usuarioEncontrado})
+            }
+        }
+    },
     
     salvarForm: (req, res) =>{
         // let errors = validationResult(req)

@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path')
 const session = require('express-session');
 const methodOverride =  require('method-override');
-
+const logMiddleware = require('./middlewares/log');
 
 const router = express.Router()
 const routerIndex = require('./routes/index')
@@ -21,7 +21,7 @@ const routerProdutos = require('./routes/produtos')
 app.use(express.urlencoded({extended: false}))
 app.use(session( {secret: 'Mensagem secreta'}));
 app.use(express.json())
-
+app.use(logMiddleware);
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public'))) 
 app.set('view engine', 'ejs')
