@@ -87,4 +87,137 @@ span .preencha-text{
   
 }
 
-@media 
+/* Responsividade*/
+
+@media (min-width: 357px) and (max-width: 480px) {
+    /* Body*/
+    .formulario-login {
+      width: 100vw;
+      height: 65vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      color: #e7dfd8;
+      margin-top: 0px;
+      margin-right: 25px;
+    }
+    .formulario-login-content {
+      width: 100%;
+    }
+    .login-content {
+      height: 90vh;
+    }
+    .inputAll {
+      width: 100vw;
+    }
+    .datas-container {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      margin-top: 0;
+      padding-bottom: 10px;
+      width: 100vw;
+    }
+    .btn {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .botao-entrar {
+      width: 20vw;
+    }
+    .span {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 600px) {
+    /* Body */
+    .mainLogin {
+      width: 100vw;
+      height: 65vh;
+    }
+    .formulario-login {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      color: #e7dfd8;
+    }
+    .inputAll {
+      width: 100%;
+      height: 65%;
+    }
+    .botao-entrar {
+      width: 60px;
+    }
+    .span {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 799px) {
+    /* Body*/
+    .area-do-cliente {
+      width: 35px;
+    }
+    .carrinho {
+      width: 35px;
+    }
+    .busca {
+      width: 35px;
+    }
+    /*Body*/
+    .formulario-login-content {
+      width: 100%;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 990px) {
+     /* Body*/
+     .area-do-cliente {
+      width: 35px;
+    }
+    .carrinho {
+      width: 35px;
+    }
+    .busca {
+      width: 35px;
+    }
+    /*Body*/
+    .formulario-login-content {
+      width: 100%;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 1024px) {
+     /* Body*/
+     .area-do-cliente {
+      width: 35px;
+    }
+    .carrinho {
+      width: 35px;
+    }
+    .busca {
+      width: 35px;
+    }
+    /*Body*/
+    .formulario-login-content {
+      width: 100%;
+    }
+  }
+  
