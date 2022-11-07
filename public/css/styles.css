@@ -154,6 +154,15 @@ footer {
   justify-content: space-around;
 }
 
+.mestra{
+  width: 80%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .contato, .follow-us, .sobre, .li{
 list-style: none;
 padding: 0px;
@@ -209,4 +218,247 @@ margin-left: 10px;
 :hover > .img-sobrenos {
   transform: translate(-15px, -15px);
   transition: .5s cubic-bezier(.5,.03,.41,1);
+}
+
+/* Media queries */
+
+@media (min-width: 357px) and (max-width: 480px) {
+  /*Navbar comum a todos*/
+
+  .cabecalho {
+    width: 100%;
+    height: 20%;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.navbar-expand-lg.navbar-color {
+    width: 100%;
+    height: max-content;
+    display: flex;
+  }
+  .container-fluid.my-container-fluid {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .iconesCabeca {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+  .icones-cabecalho {
+    width: 70%;
+  }
+  .busca,
+  .carrinho,
+  .area-do-cliente {
+    width: 50px;
+  }
+
+  /*Footer comum a todos*/
+
+  .footer {
+    width: 100vw;
+    height: max-content;
+  }
+  .mestra {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  /*Navbar comum a todos*/
+
+  .cabecalho {
+    width: 100%;
+    height: 20%;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.navbar-expand-lg.navbar-color {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-fluid.my-container-fluid {
+    width: 100%;
+    display: flex;
+  }
+  .navbar-toggler {
+    width: 100%;
+  }
+  .iconesCabeca {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .icones-cabecalho {
+    width: 70%;
+  }
+  .busca,
+  .carrinho,
+  .area-do-cliente {
+    width: 50px;
+  }
+
+  /*Footer comum a todos*/
+
+  .footer {
+    width: 100%;
+    height: max-content;
+  }
+  .mestra {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 601px) and (max-width: 799px) {
+  /*Navbar comum a todos*/
+
+  .cabecalho {
+    width: 100vw;
+    height: max-content;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.navbar-expand-lg.navbar-color {
+    width: 100%;
+    height: max-content;
+  }
+  .container-fluid.my-container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-right: 10px;
+  }
+  .areaDoToggler {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-toggler {
+    width: 20%;
+    height: 80%;
+  }
+  .iconesCabeca {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .icones-cabecalho {
+    width: 100%;
+    height: 100%;
+  }
+  .busca,
+  .carrinho,
+  .area-do-cliente {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  /*Footer comum a todos*/
+
+  .footer {
+    width: 100%;
+    height: max-content;
+  }
+  .mestra {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 990px) {
+  /*Navbar comum a todos*/
+
+  .cabecalho {
+    width: 100vw;
+    height: max-content;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.navbar-expand-lg.navbar-color {
+    width: 100%;
+    height: max-content;
+  }
+  .container-fluid.my-container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-right: 10px;
+  }
+  .areaDoToggler {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-toggler {
+    width: 20%;
+    height: 80%;
+  }
+  .iconesCabeca {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .icones-cabecalho {
+    width: 100%;
+    height: 100%;
+  }
+  .busca,
+  .carrinho,
+  .area-do-cliente {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  /*Footer comum a todos*/
+
+  .footer {
+    width: 100vw;
+    height: max-content;
+  }
+  .mestra {
+    width: 95%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+  }
 }
