@@ -28,5 +28,17 @@
   "nome": "Monica",
   "email": "monica@hotmail.com",
   "password": "123456"
+ },
+ {
+  "id": 6,
+  "nome": "luciana",
+  "email": "COLCHEI@HOTMAIL.COM",
+  "password": "zxfvzdv"
+ },
+ {
+  "id": 7,
+  "nome": "luciana",
+  "email": "COLCHEI@HOTMAIL.COM",
+  "password": "drgthret"
  }
 ]
