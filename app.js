@@ -7,22 +7,21 @@ const fs = require('fs');
 const path = require('path')
 const session = require('express-session');
 const methodOverride =  require('method-override');
-
+const logMiddleware = require('./middlewares/log');
 
 const router = express.Router()
 const routerIndex = require('./routes/index')
 const routerSobrenos = require('./routes/sobrenos')
 const routerCarrinho = require('./routes/carrinho')
-const routerCadastro = require('./routes/cadastro')
+
 const routerAreadocliente = require('./routes/areadocliente')
 const routerProdutos = require('./routes/produtos')
-
 
 
 app.use(express.urlencoded({extended: false}))
 app.use(session( {secret: 'Mensagem secreta'}));
 app.use(express.json())
-
+app.use(logMiddleware);
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public'))) 
 app.set('view engine', 'ejs')
@@ -30,8 +29,7 @@ app.set('view engine', 'ejs')
 app.use('/', routerIndex)
 app.use('/sobrenos', routerSobrenos)
 app.use('/carrinho', routerCarrinho )
-app.use('/cadastro', routerCadastro)
-app.use('/areadoclientelogin', routerAreadocliente)
+app.use('/areadocliente', routerAreadocliente)
 //app.use('/areadoclientelogin/criar', routerAreadocliente)
 app.use('/produtos', routerProdutos)
 

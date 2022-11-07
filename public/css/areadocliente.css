@@ -22,6 +22,7 @@
     text-align: center;
     color:#e7dfd8;
     margin-top: 0px;
+    padding-bottom: 30px;
 }
 
 .formulario-login-content{
@@ -44,26 +45,30 @@
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 10px;
-    margin-top: 10px;
     align-items: center;
+    width: 100%;
     
-    /* width: 100%; */
     
 }
 #email, #senha{
     text-align: initial;
 
 }
-.novo-cliente .cadastre-se{
+
+.novo-cliente {
     text-align: end;
     text-decoration: none;
     color:#e7dfd8;
 
 }
 .cadastre-se{
-    text-align: end;
+    /* text-align: end; */
+    margin-bottom: 20px;
+    padding-bottom: 30px;
     text-decoration: none;
     color:#e7dfd8;
+    margin-left: auto;
+   
 
 }
 .checkbox{
@@ -83,3 +88,235 @@
     padding: 10px;
 
 }
+
+/* Media Query*/
+
+@media (min-width: 357px) and (max-width: 480px) {
+    /* Body*/
+  
+    .login-content {
+      width: 100%;
+      height: 40%;
+    }
+    .formulario-login {
+      width: 100%;
+      height: max-content;
+      color: #e7dfd8;
+    }
+    .datas-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .inputAll {
+      width: 90%;/* Inputs: E-mail e Senha*/
+      height: max-content;
+    }
+    .btn {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .botao-entrar {
+      width: 55%;
+    }
+    .span {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 600px) {
+    /* Body */
+    .login-content {
+      width: 100%;
+      height: 40%;
+    }
+    .formulario-login {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      color: #e7dfd8;
+    }
+    .inputAll {
+      width: 100%;
+      height: max-content;
+    }
+    .datas-container {
+      width: 175%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      padding-bottom: 10px;
+    }
+    .btn {
+      width: 140%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: end;
+    }
+    .botao-entrar {
+      width: 55%;
+    }
+    .span {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 799px) {
+    /* Body*/
+    .login-content {
+      width: 100%;
+      height: 40%;
+    }
+    .formulario-login {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      color: #e7dfd8;
+    }
+    .datas-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .inputAll {
+      width: 95%;
+      height: max-content;
+    }
+    .btn {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .botao-entrar {
+      width: 55%;
+    }
+    .span {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 990px) {
+    /* Body Area do cliente */
+  
+    .login-content {
+      width: 100%;
+      height: 40%;
+    }
+    .formulario-login {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      color: #e7dfd8;
+    }
+    .datas-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .inputAll {
+      width: 95%;
+      height: max-content;
+    }
+    .btn {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .botao-entrar {
+      width: 55%;
+    }
+    .span {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+    }
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  @media (min-width: 901px){
+  
+    /* Body area do cliente */
+  
+    .login-content {
+      width: 100%;
+      height: 50%;
+    }
+  
+    .formulario-login{
+      width: 100%;
+      height: max-content;
+      color: #e7dfd8;
+    }
+    .datas-container {
+      width: 100%;
+      margin: 10px;
+    }
+  
+    .inputAll {
+      width: 95%;
+      height: max-content;
+    }
+    .btn {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .botao-entrar {
+      width: 95%
+    }
+    .span {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .cadastre-se {
+      position: relative;
+      margin-left: 25px;
+    }
+  }
+  
+  
