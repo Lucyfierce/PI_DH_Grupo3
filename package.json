@@ -21,14 +21,10 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
-<<<<<<< HEAD
-    "express-validator": "^6.14.2"
-=======
     "express-validator": "^6.14.2",
     "method-override": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
->>>>>>> 096472a0c12c4c7130caa8d5c4c191867a2b0096
   }
 }
