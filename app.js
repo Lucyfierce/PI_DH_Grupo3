@@ -7,11 +7,7 @@ const fs = require('fs');
 const path = require('path')
 const session = require('express-session');
 const methodOverride =  require('method-override');
-<<<<<<< HEAD
-
-=======
 const logMiddleware = require('./middlewares/log');
->>>>>>> 096472a0c12c4c7130caa8d5c4c191867a2b0096
 
 const router = express.Router()
 const routerIndex = require('./routes/index')

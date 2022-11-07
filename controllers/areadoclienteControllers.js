@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const usuariosFilePath = path.join(__dirname, '../data/cadastroClientes.json');
+const usuariosFilePath = path.join(__dirname, '../public/data/cadastroClientes.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
 const areadoclienteControllers = {
