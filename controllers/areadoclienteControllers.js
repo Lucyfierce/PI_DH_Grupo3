@@ -42,7 +42,7 @@ const areadoclienteControllers = {
             password: req.body.passwordCadastro,
 
         }
-        usuario.push(novoUsuario)
+        usuarios.push(novoUsuario)
         fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, ' '))
         res.redirect('/')
     },
