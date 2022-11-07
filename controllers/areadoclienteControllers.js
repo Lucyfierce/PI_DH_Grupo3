@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 
-
 const usuariosFilePath = path.join(__dirname, '../data/cadastroClientes.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
@@ -43,14 +42,15 @@ const areadoclienteControllers = {
             password: req.body.passwordCadastro,
 
         }
-        usuarios.push(novoUsuario)
+        usuario.push(novoUsuario)
         fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, ' '))
         res.redirect('/')
     },
 
-    
 }
     
+
+
 
 
 
