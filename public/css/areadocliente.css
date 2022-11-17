@@ -87,231 +87,345 @@
 /* Media Query*/
 
 @media (min-width: 357px) and (max-width: 480px) {
-    /* Body*/
-  
-    .login-content {
-      width: 100%;
-      height: 40%;
-    }
-    .formulario-login {
-      width: 100%;
-      height: max-content;
-      color: #e7dfd8;
-    }
-    .datas-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .inputAll {
-      width: 90%;/* Inputs: E-mail e Senha*/
-      height: max-content;
-    }
-    .btn {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .botao-entrar {
-      width: 55%;
-    }
-    .span {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .cadastre-se {
-      position: relative;
-      margin-left: 25px;
-    }
+  /* Body*/
+  .mainAreaCliente {
+    width: 100%;
+    height: max-content;
   }
-  @media (min-width: 481px) and (max-width: 600px) {
-    /* Body */
-    .login-content {
-      width: 100%;
-      height: 40%;
-    }
-    .formulario-login {
-      width: 100%;
-      height: max-content;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: row;
-      color: #e7dfd8;
-    }
-    .inputAll {
-      width: 100%;
-      height: max-content;
-    }
-    .datas-container {
-      width: 175%;
-      display: flex;
-      flex-direction: column;
-      margin-top: 5px;
-      padding-bottom: 10px;
-    }
-    .btn {
-      width: 140%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: end;
-    }
-    .botao-entrar {
-      width: 55%;
-    }
-    .span {
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-    }
-    .cadastre-se {
-      position: relative;
-      margin-left: 25px;
-    }
+  .login-content {
+    width: 100%;
+    height: 40%;
+    border: 1px solid white;
   }
-  @media (min-width: 601px) and (max-width: 799px) {
-    /* Body*/
-    .login-content {
-      width: 100%;
-      height: 40%;
-    }
-    .formulario-login {
-      width: 100%;
-      height: max-content;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-      color: #e7dfd8;
-    }
-    .datas-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .inputAll {
-      width: 95%;
-      height: max-content;
-    }
-    .btn {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .botao-entrar {
-      width: 55%;
-    }
-    .span {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .cadastre-se {
-      position: relative;
-      margin-left: 25px;
-    }
+  .formulario-login {
+    width: 100%;
+    height: max-content;
+    color: #e7dfd8;
   }
-  @media (min-width: 800px) and (max-width: 990px) {
-    /* Body Area do cliente */
-  
-    .login-content {
-      width: 100%;
-      height: 40%;
-    }
-    .formulario-login {
-      width: 100%;
-      height: max-content;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-      color: #e7dfd8;
-    }
-    .datas-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .inputAll {
-      width: 95%;
-      height: max-content;
-    }
-    .btn {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .botao-entrar {
-      width: 55%;
-    }
-    .span {
-      width: 100%;
-      height: max-content;
-      display: flex;
-      flex-direction: column;
-    }
-    .cadastre-se {
-      position: relative;
-      margin-left: 25px;
-    }
+  .formulario-login-content {
+    width: 100%;
+    height: max-content;
   }
-  @media (min-width: 901px){
-  
-    /* Body area do cliente */
-  
-    .login-content {
-      width: 100%;
-      height: 50%;
-    }
-  
-    .formulario-login{
-      width: 100%;
-      height: max-content;
-      color: #e7dfd8;
-    }
-    .datas-container {
-      width: 100%;
-      margin: 10px;
-    }
-  
-    .inputAll {
-      width: 95%;
-      height: max-content;
-    }
-    .btn {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .botao-entrar {
-      width: 55%
-    }
-    .span {
-      width: 100%;
-      height: max-content;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .cadastre-se {
-      position: relative;
-      margin-left: 25px;
-    }
+  .datas-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  
-  
+  .inputAll {
+    width: 90%; /* Inputs: E-mail e Senha*/
+    height: max-content;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .botao-entrar {
+    width: 55%;
+  }
+  .span {
+    width: 100%;
+  }
+  .novo-cliente {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .novo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+  .cadastre-se {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  /* Body */
+  .login-content {
+    width: 100%;
+    height: 40%;
+  }
+  .formulario-login {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    color: #e7dfd8;
+  }
+  .inputAll {
+    width: 100%;
+    height: max-content;
+  }
+  .datas-container {
+    width: 175%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  .btn {
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .botao-entrar {
+    width: 55%;
+  }
+  .span {
+    width: 100vw;
+   }
+   .novo-cliente {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .novo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+  .cadastre-se {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 799px) {
+  /* Body*/
+  .login-content {
+    width: 100%;
+    height: 40%;
+  }
+  .formulario-login {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #e7dfd8;
+  }
+  /* Incluido recentemente.*/
+  .formulario-login-content {
+    width: 100%;
+    height: max-content;
+  }
+  .datas-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputAll {
+    width: 95%;
+    height: max-content;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .botao-entrar {
+    width: 55%;
+  }
+  .span {
+    width: 100%;
+  }
+  .novo-cliente {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .novo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+  .cadastre-se {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 800px) and (max-width: 990px) {
+  /* Body Area do cliente */
+
+  .login-content {
+    width: 100%;
+    height: 40%;
+  }
+  .formulario-login {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #e7dfd8;
+  }
+  .formulario-login-content {
+    width: 100%;
+    height: max-content;
+  }
+  .datas-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputAll {
+    width: 95%;
+    height: max-content;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .botao-entrar {
+    width: 35%;
+  }
+  .span {
+    width: 100%;
+  }
+  .novo-cliente {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .novo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+  .cadastre-se {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 901px) {
+  /* Body area do cliente */
+
+  .login-content {
+    width: 100%;
+    height: 50%;
+  }
+
+  .formulario-login {
+    width: 100%;
+    height: max-content;
+    color: #e7dfd8;
+  }
+   /* Incluido recentemente.*/
+   .formulario-login-content {
+    width: 100%;
+    height: max-content;
+  }
+  .datas-container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .inputAll {
+    width: 95%;
+    height: max-content;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .botao-entrar {
+    width: 35%;
+  }
+  .span {
+    width: 100%;
+  }
+  .novo-cliente {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .novo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+  }
+  .cadastre-se {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+}

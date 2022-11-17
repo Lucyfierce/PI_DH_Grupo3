@@ -221,7 +221,6 @@ margin-left: 10px;
 }
 
 /* Media queries */
-
 @media (min-width: 357px) and (max-width: 480px) {
   /*Navbar comum a todos*/
 
@@ -239,7 +238,7 @@ margin-left: 10px;
     display: flex;
   }
   .container-fluid.my-container-fluid {
-    width: 100%;
+    width: 50%;
     height: max-content;
     display: flex;
     flex-wrap: wrap;
@@ -249,8 +248,16 @@ margin-left: 10px;
     flex-direction: column;
     align-items: center;
   }
+  /* incluir no PI main*/
   .iconesCabeca {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+  }
+  /* incluir no PI main*/
+  .search .busca {
+    width: 10%;
     height: max-content;
     display: flex;
     flex-direction: row;
@@ -295,17 +302,18 @@ margin-left: 10px;
     width: 100%;
     height: max-content;
     display: flex;
-    flex-wrap: wrap;
   }
   .container-fluid.my-container-fluid {
-    width: 100%;
+    width: 50%;
+    height: max-content;
     display: flex;
+    flex-wrap: wrap;
   }
   .navbar-toggler {
-    width: 100%;
+    width: 30%;
   }
   .iconesCabeca {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -348,12 +356,13 @@ margin-left: 10px;
   .navbar.navbar-expand-lg.navbar-color {
     width: 100%;
     height: max-content;
+    display: flex;
   }
   .container-fluid.my-container-fluid {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: max-content;
     display: flex;
-    margin-right: 10px;
+    flex-wrap: wrap;
   }
   .areaDoToggler {
     width: 50%;
@@ -413,12 +422,13 @@ margin-left: 10px;
   .navbar.navbar-expand-lg.navbar-color {
     width: 100%;
     height: max-content;
+    display: flex;
   }
   .container-fluid.my-container-fluid {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: max-content;
     display: flex;
-    margin-right: 10px;
+    flex-wrap: wrap;
   }
   .areaDoToggler {
     width: 50%;
@@ -427,7 +437,7 @@ margin-left: 10px;
     align-items: center;
   }
   .navbar-toggler {
-    width: 20%;
+    width: 50%;
     height: 80%;
   }
   .iconesCabeca {
@@ -460,5 +470,112 @@ margin-left: 10px;
     height: max-content;
     display: flex;
     justify-content: space-between;
+  }
+}
+@media (max-width: 991px) {
+  .cabecalho {
+    width: 100vw;
+    height: max-content;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.navbar-expand-lg.navbar-color {
+    width: 100%;
+    height: max-content;
+    display: flex;
+  }
+  .container-fluid.my-container-fluid {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .areaDoToggler {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-toggler {
+    width: 20%;
+    height: 80%;
+  }
+  .iconesCabeca {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .icones-cabecalho {
+    width: 100%;
+    height: 100%;
+  }
+  .busca,
+  .carrinho,
+  .area-do-cliente {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Barra de pesq */
+@media (min-width: 357px) and (max-width: 480px) {
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 680px;
+  }
+}
+@media (min-width: 481px) and (max-width: 534px) {
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 600px;
+  }
+}
+@media (min-width: 535px) and (max-width: 600px) {
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 650px;
+  }
+}
+@media (min-width: 601px) and (max-width: 749px) {
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 650px;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 550px;
+  }
+}
+@media (min-width: 901px) and (max-width: 975px) {
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 500px;
+  }
+}
+@media (min-width: 976px) and (max-width: 990px){
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 490px;
+  }
+}
+@media (min-width: 991px){
+  #pesq {
+    width: 120vw;
+    position: fixed;
+    margin-bottom: 490px;
   }
 }
