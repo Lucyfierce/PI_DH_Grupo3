@@ -23,7 +23,7 @@ const areadoclienteControllers = {
             }else{
                 let errors = [] 
                 errors.push('Usuario nao encontrado')
-                res.render('login', {errors, usuarioEncontrado})
+                res.render('index', {errors, usuarioEncontrado})
             }
         }
     },

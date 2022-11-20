@@ -40,5 +40,23 @@
   "nome": "luciana",
   "email": "COLCHEI@HOTMAIL.COM",
   "password": "drgthret"
+ },
+ {
+  "id": 8,
+  "nome": "luciana",
+  "email": "COLCHEI@HOTMAIL.COM",
+  "password": "123456"
+ },
+ {
+  "id": 9,
+  "nome": "luciana",
+  "email": "COLCHEI@HOTMAIL.COM",
+  "password": "123456"
+ },
+ {
+  "id": 10,
+  "nome": "thomas",
+  "email": "thomas@gmail",
+  "password": "12345"
  }
 ]
