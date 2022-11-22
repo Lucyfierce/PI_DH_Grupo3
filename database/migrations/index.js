@@ -1,0 +1,1 @@
+var escola = require('../migrations')
