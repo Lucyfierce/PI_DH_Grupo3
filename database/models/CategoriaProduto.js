@@ -30,10 +30,13 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
-
+           
+        
+        },
+        {
             tableName:"CategoriaProdutos",
-            underscored: true,
-
-
-        }
-    )}
+        underscored: true,
+        },
+    );
+return CategoriaProduto
+}
