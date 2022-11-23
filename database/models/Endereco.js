@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
-            usuario_id: {
+            usuarios_id: {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
