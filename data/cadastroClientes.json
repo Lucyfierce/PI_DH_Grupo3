@@ -58,5 +58,11 @@
   "nome": "thomas",
   "email": "thomas@gmail",
   "password": "12345"
+ },
+ {
+  "id": 11,
+  "nome": "luciana",
+  "email": "COLCHEI@HOTMAIL.COM",
+  "password": "123456"
  }
 ]

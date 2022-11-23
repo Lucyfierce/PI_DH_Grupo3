@@ -30,13 +30,22 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
-           
-        
         },
         {
             tableName:"CategoriaProdutos",
-        underscored: true,
+            underscored: true,
         },
     );
-return CategoriaProduto
+       
+    CategoriaProduto.associate = function(models){
+        CategoriaProduto.belongsTo(models.Produto, {
+
+            as: "Produto",
+            foreginKey: "CategoriaProdutos_id",
+
+
+        });
+    }
+
+return CategoriaProduto;
 }

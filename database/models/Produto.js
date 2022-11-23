@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             },
             cor: {
                 type: DataTypes.STRING,
-                autoIncrement: true,
                 notNull: true,
             },
             imagem: {
@@ -26,5 +25,26 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         },
     );
+
+    Produto.associate = function(models){
+        Produto.hasMany(models.CategoriaProduto, {
+
+            as: "CategoriaProduto",
+            foreginKey: "produtos_id",
+
+        });
+    
+        Produto.associate = function(models){
+            Produto.belongsToMany(models.Pedido, {
+    
+                as: "ProdutosPedidos",
+
+                through: "produtos_pedidos",
+                foreginKey: "pedido_id",
+                otherKey: "produto_id",
+
+            });   
+    }
     return Produto
+}
 }

@@ -34,5 +34,15 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         },
     );
-    return Endereco
-}
+
+        Endereco.associate = function(models){
+        Endereco.belongsTo(models.Usuario, {
+
+            as: "Endereco",
+            foreginKey: "Usuarios_id",
+
+
+        });
+
+    return Endereco;
+}}

@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             },
             produtos_id: {
                 type: DataTypes.INTEGER,
-                autoIncrement: true,
                 notNull: true,
             },
             pedido_id: {
@@ -29,5 +28,10 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         },
     );
+
+    
+
+
+    
     return ProdutoPedido
 }

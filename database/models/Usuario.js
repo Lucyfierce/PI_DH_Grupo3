@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             },
             nome: {
                 type: DataTypes.STRING,
-                autoIncrement: true,
                 notNull: true,
             },
             email: {
@@ -38,5 +37,19 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         },
     );
-    return Usuario
-}
+
+    Usuario.associate = function(models){
+        Usuario.belongsTo(models.Endereco, {
+
+            as: "Usuario_endereco",
+            foreginKey: " ", //??
+        });
+
+        Usuario.associate = function(models){
+            Usuario.hasMany(models.Pedido, {
+    
+                as: "usuario_pedido",
+                foreginKey: " ", //???
+            });
+    return Usuario;
+}}}
