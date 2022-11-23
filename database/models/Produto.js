@@ -1,8 +1,8 @@
 const { sequelize, DataTypes } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-    const ProdutosPedidos = sequelize.define(
-        "ProdutosPedidos",
+    const Produto = sequelize.define(
+        "Produto",
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -10,24 +10,21 @@ module.exports = (sequelize, DataTypes) => {
                 autoIncrement: true,
                 notNull: true,
             },
-            produtos_id: {
-                type: DataTypes.INTEGER,
+            cor: {
+                type: DataTypes.STRING,
                 autoIncrement: true,
                 notNull: true,
             },
-            pedido_id: {
+            imagem: {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
-            quantidade: {
-                type: DataTypes.INTEGER,
-                notNull: true,
-            }
+            
         },
         {
-            tableName: "ProdutosPedidos",
+            tableName: "Produtos",
             underscored: true,
         },
     );
-    return ProdutosPedidos
+    return Produto
 }

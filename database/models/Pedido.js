@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
                 autoIncrement: true,
                 notNull: true,
             },
-            cliente: {
-                type: DataTypes.STRING,
+            cliente_id: {
+                type: DataTypes.INTEGER,
                 autoIncrement: true,
                 notNull: true,
             },
