@@ -1,48 +1,37 @@
 const { sequelize, DataTypes } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-    const Endereco = sequelize.define(
-        "Endereco",
+    const ProdutoPedido = sequelize.define(
+        "ProdutoPedido",
         {
             id: {
                 type: DataTypes.INTEGER,
-                primaryKey: true,
+                primaryKey: true, 
                 autoIncrement: true,
                 notNull: true,
             },
-            logradouro: {
-                type: DataTypes.STRING,
-                notNull: true,
-            },
-            numero: {
+            produtos_id: {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
-            CEP: {
+            pedido_id: {
                 type: DataTypes.INTEGER,
                 notNull: true,
             },
-            usuarios_id: {
+            quantidade: {
                 type: DataTypes.INTEGER,
                 notNull: true,
-            },
-
-
+            }
         },
         {
-            tableName: "Endereco",
+            tableName: "Produtos_Pedidos",
             underscored: true,
         },
     );
 
-        Endereco.associate = function(models){
-        Endereco.belongsTo(models.Usuario, {
-
-            as: "Endereco",
-            foreginKey: "Usuarios_id",
+    
 
 
-        });
-
-    return Endereco;
-}}
+    
+    return ProdutoPedido
+}

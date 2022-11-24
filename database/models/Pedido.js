@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             },
             cliente_id: {
                 type: DataTypes.INTEGER,
-                autoIncrement: true,
                 notNull: true,
             },
             total: {
@@ -37,5 +36,32 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         },
     );
-    return Pedido
-}
+    
+    Pedido.associate = function(models){
+        Pedido.hasMany(models.Usuario, {
+
+            as: "usuario_pedido",
+            foreginKey: "usuario_id", 
+        });
+
+    Pedido.associate = function(models){
+        Pedido.belongsTo(models.Pagamento, {
+    
+                as: "usuario_pagamento",
+                foreginKey: "pagamento_id ", 
+            });
+
+    Pedido.associate = function(models){
+        Pedido.belongsToMany(models.Produto, {
+        
+                    as: "pedido_produto",
+    
+                    through: "produtos_pedidos",
+                    foreginKey: "produto_id",
+                    otherKey: "pedido_id",
+    
+                });   
+
+
+    return Pedido;
+}}}}

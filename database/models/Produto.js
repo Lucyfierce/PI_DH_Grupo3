@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             },
             cor: {
                 type: DataTypes.STRING,
-                autoIncrement: true,
                 notNull: true,
             },
             imagem: {
@@ -26,5 +25,5 @@ module.exports = (sequelize, DataTypes) => {
             underscored: true,
         },
     );
-    return Produto
+
 }
