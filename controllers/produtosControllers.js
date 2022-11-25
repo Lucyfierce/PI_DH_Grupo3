@@ -7,7 +7,9 @@ const produtos = JSON.parse(fs.readFileSync(produtoJson))
 const produtosControllers = {
     index: (req, res) => {
         
-        let categoria = req.query.categoria//pega os parâmetros da url
+        let categoria = req.query.categoria
+
+        //
         
         if (!categoria)
             res.render('produtos', { produtos: produtos })
@@ -17,7 +19,7 @@ const produtosControllers = {
             res.render('produtos', { produtos: resultado })
 
         }
-
+    
     },
 
     //Edit
