@@ -39,6 +39,18 @@ const areadoclienteControllers = {
     console.log(req.body);
 
     let novoUsuario = {
+
+      nome: req.body.nomeCadastro,
+      email: req.body.emailCadastro,
+      password: req.body.passwordCadastro,
+      newsletter: req.body.newsletter == 'on' ? 1 : 0, //se estiver check salva 1 senão 0.
+    };
+    //usuarios.push(novoUsuario);
+    //fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, ' '))
+    Usuario.create(novoUsuario)
+      .catch((erro) => console.error(erro)) //erro conexao com o banco console.
+      .then(res.redirect("/"));
+
       id: usuarios[usuarios.length - 1].id + 1,
       nome: req.body.nomeCadastro,
       email: req.body.emailCadastro,
@@ -49,6 +61,7 @@ const areadoclienteControllers = {
     Usuario.create(
         novoUsuario
     ).then(res.redirect("/"));
+
   },
 };
 
