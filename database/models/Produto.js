@@ -26,4 +26,21 @@ module.exports = (sequelize, DataTypes) => {
         },
     );
 
+    Produto.associate = function (models) {
+        Produto.belongsTo(models.CategoriaProduto, {
+          as: "CategoriaProduto",
+          foreginKey: "categoria_produtos_id",
+        });
+      };
+    
+      Produto.associate = function (models) {
+        Produto.belongsToMany(models.Pedido, {
+          as: "ProdutosPedidos",
+    
+          through: "produtos_pedidos",
+          foreginKey: "pedido_id",
+          otherKey: "produto_id",
+        });
+      };
+
 }

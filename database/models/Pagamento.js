@@ -56,14 +56,14 @@ module.exports = (sequelize, DataTypes) => {
             as: "endereco_pagamento",
             foreginKey: "Endereco_id",
 
-        });
+        })};
 
         Pagamento.associate = function(models){
             Pagamento.hasMany(models.Pedido, {
     
                 as: "pagamento_pedido",
                 foreginKey: "pedido_id",
-            });
+            })};
     
     return Pagamento;
-}}}
+}

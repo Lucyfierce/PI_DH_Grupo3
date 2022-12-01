@@ -38,18 +38,18 @@ module.exports = (sequelize, DataTypes) => {
         },
     );
 
-    Usuario.associate = function(models){
-        Usuario.belongsTo(models.Endereco, {
-
-            as: "Usuario_endereco",
-            foreginKey: " ", //??
+    Usuario.associate = function (models) {
+        Usuario.hasMany(models.Endereco, {
+          as: "Endereco",
+          foreginKey: "usuario_id",
         });
-
-        Usuario.associate = function(models){
-            Usuario.hasMany(models.Pedido, {
+      };
     
-                as: "usuario_pedido",
-                foreginKey: " ", //???
-            });
+      Usuario.associate = function (models) {
+        Usuario.hasMany(models.Pedido, {
+          as: "Pedido",
+          foreginKey: "pedido_id",
+        });
+      };
     return Usuario;
-}}}
+}
