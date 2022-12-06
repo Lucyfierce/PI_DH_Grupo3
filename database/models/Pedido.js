@@ -46,9 +46,9 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   Pedido.associate = function (models) {
-    Pedido.belongsTo(models.Pagamento, {
+    Pedido.hasMany(models.Pagamento, {
       as: "Pagamento",
-      foreginKey: "pagamento_id ",
+      foreginKey: "pedido_id ",
     });
   };
 

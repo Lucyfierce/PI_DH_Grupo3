@@ -40,9 +40,9 @@ module.exports = (sequelize, DataTypes) => {
     });
   };
   Endereco.associate = function (models) {
-    Endereco.belongsTo(models.Pagamento, {
+    Endereco.hasMany(models.Pedido, {
       as: "Pagamento",
-      foreginKey: "pagamento_id",
+      foreginKey: "endereco_id",
     });
   };
 
