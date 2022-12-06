@@ -50,43 +50,11 @@ module.exports = (sequelize, DataTypes) => {
   );
 
 
-  Pagamento.associate = function (models) {
-    Pagamento.belongsTo(models.Endereco, {
-      as: "Endereco",
-      foreginKey: "pagamento_id",
-    });
-  };
-  Pagamento.associate = function (models) {
-    Pagamento.belongsTo(models.Pedido, {
+   Pagamento.associate = function (models) {
+    Pagamento.hasMany(models.Pedido, {
       as: "Pedido",
       foreginKey: "pagamento_id",
     });
   };
   return Pagamento;
 };
-
-        },
-        {
-            tableName: "Pagamento",
-            underscored: true,
-        },
-    );
-
-    Pagamento.associate = function(models){
-        Pagamento.belongsTo(models.Endereco, {
-
-            as: "endereco_pagamento",
-            foreginKey: "Endereco_id",
-
-        });
-
-        Pagamento.associate = function(models){
-            Pagamento.hasMany(models.Pedido, {
-    
-                as: "pagamento_pedido",
-                foreginKey: "pedido_id",
-            });
-    
-    return Pagamento;
-}}}
-
