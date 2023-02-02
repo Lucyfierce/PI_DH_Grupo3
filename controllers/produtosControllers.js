@@ -9,7 +9,8 @@ const produtosControllers = {
     index: (req, res) => {
         produtoRequest.getProduto()
             .then((protudosRetornados) => {
-                protudosRetornados.data;
+
+                let produto = protudosRetornados.data;
                 let categoria = req.query.categoria
 
                 //
@@ -19,7 +20,7 @@ const produtosControllers = {
 
                 else {
                     let resultado = produtos.filter(p => p.categoria == categoria)
-                    res.render('produtos', { produtos: resultado })
+                    res.render('produtos', produto, { produtos: resultado })
 
                 }
             })
@@ -35,8 +36,8 @@ const produtosControllers = {
         let productToEdit = products.find(product => product.id == id)
         produtoRequest.getProduto(id)
             .then((protudosRetornados) => {
-                protudosRetornados.data
-                res.render('pageProductEdit', { productToEdit })
+                let produto = protudosRetornados.data
+                res.render('pageProductEdit', produto, { productToEdit })
             })
             .catch((err) => {
                 // console.log(error)
@@ -52,8 +53,8 @@ const produtosControllers = {
         produtoRequest.updateProduto(id)
             .then((protudosRetornados) => {
 
-                protudosRetornados.data
-                res.render('pageProductEdit', { productToEdit })
+                let produto = protudosRetornados.data
+                res.render('pageProductEdit', produto, { productToEdit })
             })
         if (req.files[0] != undefined) {
             image = req.files[0].filename
@@ -100,9 +101,9 @@ const produtosControllers = {
             .then((protudoRetornado) => {
 
                 Produto.destroy({ where: { id: id } })
-                protudoRetornado.data
+                let produto = protudoRetornado.data
 
-                res.render(json({ msg: 'Produto excluído com sucesso!' }))
+                res.render(produto, json({ msg: 'Produto excluído com sucesso!' }))
             })
             .catch((err) => {
                 // console.log(error)
