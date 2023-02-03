@@ -1660,3 +1660,13 @@ O usuario acessou a rota /css/areadocliente.css
 O usuario acessou a rota /js/carousel.js
 O usuario acessou a rota /js/pesquisa.js
 O usuario acessou a rota /img/logo_jazz_bass.png
+O usuario acessou a rota /
+O usuario acessou a rota /css/home.css
+O usuario acessou a rota /css/styles.css
+O usuario acessou a rota /css/cadastro.css
+O usuario acessou a rota /css/areadocliente.css
+O usuario acessou a rota /js/carousel.js
+O usuario acessou a rota /js/pesquisa.js
+O usuario acessou a rota /img/logo_jazz_bass.png
+O usuario acessou a rota /img/carouselHomeBaixo1.jpg
+O usuario acessou a rota /produtos?categoria=1
