@@ -4,6 +4,8 @@ const path = require("path");
 const db = require("../database/models");
 const Usuario = db.Usuario;
 
+const clienteRequest = require("../requests/clienteRequest");
+
 const usuariosFilePath = path.join(__dirname, "../data/cadastroClientes.json");
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, "utf-8"));
 
@@ -40,16 +42,21 @@ const areadoclienteControllers = {
 
     let novoUsuario = {
 
-      nome: req.body.nomeCadastro,
+      name: req.body.nomeCadastro,
       email: req.body.emailCadastro,
       password: req.body.passwordCadastro,
       newsletter: req.body.newsletter == 'on' ? 1 : 0, //se estiver check salva 1 senão 0.
     };
+
+    clienteRequest.createCliente(novoUsuario);
+
+
+
     //usuarios.push(novoUsuario);
     //fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, ' '))
-    Usuario.create(novoUsuario)
-      .catch((erro) => console.error(erro)) //erro conexao com o banco console.
-      .then(res.redirect("/"));
+    // Usuario.create(novoUsuario)
+    //   .catch((erro) => console.error(erro)) //erro conexao com o banco console.
+    //   .then(res.redirect("/"));
 
   },
 };
