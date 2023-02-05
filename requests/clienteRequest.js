@@ -11,10 +11,13 @@ const clienteRequest = {
         url: `${url}/`
     }),
 
-    getCliente: (id) => axios({
+    getCliente: (cliente) => axios({
         ...def,
-        method: 'get',
-        url: `${url}/${id}`
+        method: 'post',
+        data: {
+            ...cliente
+        },
+        url: `${url}/login` 
     }),
 
     createCliente: (cliente) => axios({
@@ -24,6 +27,7 @@ const clienteRequest = {
             ...cliente
         },
         url: `${url}/`
+
     }),
 
     updateCliente: (id) => axios({

@@ -11,10 +11,16 @@ const produtoRequest = {
         url: `${url}/`
     }),
 
-    getProduto: (id) => axios({
+    getProdutoId: (id) => axios({
         ...def,
         method: 'get',
         url: `${url}/${id}`
+    }),
+
+    getProdutoCategory: (id) => axios({
+        ...def,
+        method: 'get',
+        url: `${url}/categoria/${id}`
     }),
 
     createProduto: () => axios({
