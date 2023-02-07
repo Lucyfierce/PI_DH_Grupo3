@@ -22,12 +22,14 @@
                   <label class="datas-container" id="senha" for="password">Senha</label>
                   <input class="datas-container" type="password" name="password" id="password" placeholder="Senha"
                     required>
+                   <input class="botao-entrar" id="botao-entrar" type="submit" name="Entrar" value="Entrar">
                 </div>
-                <div class="btn"><input class="botao-entrar" id="botao-entrar" type="submit" name="Entrar" value="Entrar"></div>
+                
               </div>
               <div class="span">
-                <span class="novo-cliente">Novo cliente?</span>
+                <span class="novo-cliente">Novo cliente?
                 <a class="cadastre-se" href="/areadocliente/cadastro">Cadastre-se aqui →</a>
+              </span>
               </div>
             </form>
           </div>
@@ -36,9 +38,65 @@
 
       <%- include('./partials/footet.ejs') %>
 
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div class="toast" id="login">
+          <div class="toast-header">
+              <strong class="me-auto"><i class="bi-gift-fill"></i> Login de usuário</strong>
+              
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+              Usuário ou senha inválidos! 
+          </div>
+      </div>
+        </div>
+        
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div class="toast" id="unauthorized">
+          <div class="toast-header">
+              <strong class="me-auto"><i class="bi-gift-fill"></i> Login de usuário</strong>
+              
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+              Login necessário para acesso! 
+          </div>
+      </div>
+        </div>
+      </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
           crossorigin="anonymous"></script>
+
+          <script type="text/javascript">
+            var loginError = <%- errors %>;
+            var unauthorized = <%- unauthorized %>;
+            if (loginError)
+            showToastLogin();
+
+            if (unauthorized)
+            showToastUnauthorized();
+
+            
+            function showToastLogin(){
+              var el = document.getElementById("login");
+              var tst = new bootstrap.Toast(el);
+      
+              tst.show()
+      
+            };
+                  
+            function showToastUnauthorized(){
+              var el = document.getElementById("unauthorized");
+              var tst = new bootstrap.Toast(el);
+      
+              tst.show()
+      
+            };
+            
+            
+            </script>
   </body>
 
 </html>

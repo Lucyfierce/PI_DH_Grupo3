@@ -1,9 +1,11 @@
-const path = require('path')
+const path = require("path");
 
 const indexControllers = {
-    index: (req, res) => {
-        res.render('index')
-    }
-}
+  index: (req, res) => {
+    let message = req.query.sucesso;
 
-module.exports = indexControllers
+    res.render("index", { message: message ?? false });
+  },
+};
+
+module.exports = indexControllers;
