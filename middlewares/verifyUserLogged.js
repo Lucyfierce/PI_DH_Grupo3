@@ -1,12 +1,11 @@
-function admin(req, res, next){
-    let user = req.session.userLogged;
-        if (user){
-                next();       
-        }else{
-                const error = new Error ('Usuario nao tem privilegios')
-        error.status = "401"
-        throw error;
-            }
-}         
+function admin(req, res, next) {
+  let user = req.session.userLogged;
+  if (user) {
+    next();
+  } else {
+    res.redirect("/areadocliente?unauthorized=true");
+
+  }
+}
 
 module.exports = admin;

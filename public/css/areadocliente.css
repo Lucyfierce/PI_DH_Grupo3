@@ -25,6 +25,11 @@
     padding-bottom: 30px;
 }
 
+.inputAll{
+  width: 30%;
+  margin-top: 0%;
+}
+
 .formulario-login-content{
     width: 30%;
     margin-top: 0;
@@ -40,12 +45,15 @@
 }
 .botao-entrar{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin: 10px;
-    align-items: center;
+    margin: 40px;
+    margin-left: 20px;
+    margin-right: 40px;
     width: 100%;
     
     
