@@ -13,6 +13,7 @@ const router = express.Router()
 const routerIndex = require('./routes/index')
 const routerSobrenos = require('./routes/sobrenos')
 const routerCarrinho = require('./routes/carrinho')
+const routerCadastro = require('./routes/cadastro')
 
 const routerAreadocliente = require('./routes/areadocliente')
 const routerProdutos = require('./routes/produtos')
@@ -23,7 +24,7 @@ app.use(session( {secret: 'Mensagem secreta'}));
 app.use(express.json())
 app.use(logMiddleware);
 app.set('views', path.join(__dirname, 'views'))
-app.use(express.static(path.join(__dirname, 'public'))) 
+app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs')
 
 app.use('/', routerIndex)
@@ -32,6 +33,7 @@ app.use('/carrinho', routerCarrinho )
 app.use('/areadocliente', routerAreadocliente)
 //app.use('/areadoclientelogin/criar', routerAreadocliente)
 app.use('/produtos', routerProdutos)
+app.use('/', routerCadastro)
 
 
 
@@ -46,13 +48,13 @@ app.use('/produtos', routerProdutos)
 //     // set locals, only providing error in development
 //     res.locals.message = err.message;
 //     res.locals.error = req.app.get('env') === 'development' ? err : {};
-  
+
 //     // render the error page
 //     res.status(err.status || 500);
 //     res.render('error');
 //   });
-  
+
 //   module.exports = app;
-  
+
 
 app.listen(3000, ()=> {console.log('Na porta 3000')})

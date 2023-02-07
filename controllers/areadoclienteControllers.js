@@ -47,9 +47,10 @@ const areadoclienteControllers = {
     };
     //usuarios.push(novoUsuario);
     //fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, ' '))
-    Usuario.create(novoUsuario)
-      .catch((erro) => console.error(erro)) //erro conexao com o banco console.
-      .then(res.redirect("/"));
+      
+    // Usuario.create(novoUsuario)
+    //   .catch((erro) => console.error(erro)) //erro conexao com o banco console.
+    //   .then(res.redirect("/"));
 
   },
 };
