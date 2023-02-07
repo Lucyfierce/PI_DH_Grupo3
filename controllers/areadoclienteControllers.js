@@ -11,7 +11,10 @@ const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, "utf-8"));
 
 const areadoclienteControllers = {
   index: (req, res) => {
-    res.render("areadoclientelogin", { errors: [] });
+    res.render("areadoclientelogin", {
+      errors: false,
+      unauthorized: req.query.unauthorized ?? false,
+    });
   },
 
   viewForm: (req, res) => {
@@ -31,33 +34,16 @@ const areadoclienteControllers = {
           req.session.userLogged = usuario;
           res.redirect("/carrinho");
         }
-
-        // let usuarioEncontrado = result.data;
-        //  if (usuarioEncontrado) {
-        //    if (usuarioEncontrado.password === usuario.password) {
-        //      req.session.userLogged = usuario;
-        //      res.redirect("/carrinho");
-        //    } else {
-        //      let errors = [];
-        //      errors.push("Usuario nao encontrado");
-        //      res.render("index", { errors, usuarioEncontrado });
-        //    }
-        //  }
       })
       .catch((err) => {
         let errors = [];
         errors.push("unauthorized");
         errors.push("unauthorized");
-        res.render("areadoclientelogin", { errors: ["errors"] });
-
+        res.render("areadoclientelogin", { errors: true, unauthorized:false });
       });
   },
 
   salvarForm: (req, res) => {
-    // let errors = validationResult(req)
-    // if (!errors.isEmpty()){
-    //     return res.render('areadoclientelogin', {errors: errors.errors})
-    // }
     console.log(req.body);
 
     let novoUsuario = {

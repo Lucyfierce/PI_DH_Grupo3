@@ -39,7 +39,7 @@
       <%- include('./partials/footet.ejs') %>
 
       <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-        <div class="toast" id="myToast">
+        <div class="toast" id="login">
           <div class="toast-header">
               <strong class="me-auto"><i class="bi-gift-fill"></i> Login de usuário</strong>
               
@@ -50,6 +50,19 @@
           </div>
       </div>
         </div>
+        
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div class="toast" id="unauthorized">
+          <div class="toast-header">
+              <strong class="me-auto"><i class="bi-gift-fill"></i> Login de usuário</strong>
+              
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+              Login necessário para acesso! 
+          </div>
+      </div>
+        </div>
       </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -57,21 +70,25 @@
           crossorigin="anonymous"></script>
 
           <script type="text/javascript">
-            var message = <%- errors %>;
-            console.log(message);
-            console.log(<%- errors %>);
-            if (message.length>0)
-            showToast();
+            var loginError = <%- errors %>;
+            var unauthorized = <%- unauthorized %>;
+            if (loginError)
+            showToastLogin();
+
+            if (unauthorized)
+            showToastUnauthorized();
+
+            
+            function showToastLogin(){
+              var el = document.getElementById("login");
+              var tst = new bootstrap.Toast(el);
       
-            // console.log(message)
-            
-            // if(message) 
-            // {
-            //   showToast();
-            // }
-            
-            function showToast(){
-              var el = document.getElementById("myToast");
+              tst.show()
+      
+            };
+                  
+            function showToastUnauthorized(){
+              var el = document.getElementById("unauthorized");
               var tst = new bootstrap.Toast(el);
       
               tst.show()
